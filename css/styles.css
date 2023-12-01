@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  overflow: hidden;  
+}
+
+
+.card-image {
+  width: 300px;
+  height: 100%;
+}
+
+.card-image img {
+  width: 300px;
+  height: 100%;
+}
+
+.card-content {
+  padding: 30px;
+  width: 300px;
+  height: 100%;
+}
+
+.title {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.card-content h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces',serif;
+  font-size: 32px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.description {
+  margin-top: 30px;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.price {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces',serif;
+  font-size: 32px;
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+button img {
+  padding-right: 10px;
+}
+
+button:active {
+  background-color: hsl(158, 36%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: 100vh;
+  }
+  .card {
+    flex-direction: column;
+    width: 350px;
+  }
+  .card-image {
+    width: 350px;
+  }
+  .card-image img {
+    width: 100%;
+  }
+  .card-content {
+    width: 100%;
+    padding: 30px;
+  }
+  .price {
+    margin-top: 20px;
+  }
+  button {
+    margin-top: 15px;
+  }
+}
